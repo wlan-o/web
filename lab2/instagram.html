@@ -5,33 +5,216 @@
             Instagram login page
         </title>
         <style>
+            html{
+                font-family:"Arial",sans-serif;
+            }
+            hr{
+                border: none;
+                background-color: rgba(207, 207, 207, 0.65);
+                color: rgba(14, 14, 14, 0.65);
+                height: 1px;
+                width:270px;
+            }
+            A{
+                text-decoration: none;
+            }
+            ul li {
+                display: inline-block;
+                padding: 0 0 0 15;
+            }
             #main{
                 position: absolute;
-                top:100px;
+                top:103px;
                 left:560px;
+                width:750px;
+
             }
-            #logic-window{
+            #login-window{
                 position:absolute;
                 left:400px;
                 top:15px;
                 width:350px;
                 height:380px;
-                border:1px solid rgb(200, 200, 200);
+                border:1px solid rgb(224, 224, 224);
+            }
+            #registration-window{
+                position:absolute;
+                left:400px;
+                top:405px;
+                width:350px;
+                height:60px;
+                border:1px solid rgb(224, 224, 224);
+                text-align: center;
+                font-size: 13px;
+                line-height:60px;
+            }
+            #input-prompts{
+                position:absolute;
+                top:105px;
+                left:40px;
+            }
+            #input-field{
+                font-size: 11px;
+                position:absolute;
+                top:15px;
+                width:270px;
+                height:40px;
+                border:1px solid rgb(224, 224, 224);
+                border-radius: 3px;
+            }
+            #password-input{
+                position:absolute;
+                top:50px;
+            }
+            #login-button{
+                position:absolute;
+                top:120px;
+                width:270px;
+                height:30px;
+                border-radius:5px;
+                border:none;
+                background-color:rgba(0, 149, 246, 0.3);
+                color:white
+            }
+            #login-button-div{
+                font-weight: 300;
+            }
+            #line{
+                position: absolute;
+                top:160px;
+            }
+            #or{
+                position: absolute;
+                top:0px;
+                width:70px;
+                left:100px;
+                text-align: center;
+                background-color: white;
+                color: rgb(167, 167, 167);
+                font-size: 17px;
+            }
+            #login-via-facebook{
+                position: absolute;
+                top:190px;
+            }
+            #forgot-password{
+                position: absolute;
+                text-align: center;
+                font-size: 12px;
+                top:240px;
+                width:280px;
+            }
+            #install-app{
+                position: absolute;
+                top:480px;
+                left:400px;
+                width:350px;
+                height:120px;
+                font-size:14px;
+            }
+            #install-app-title{
+                padding-left:90px;
+                position:absolute;
+                top:15px;
+                width:350;
+                text-align: center;
+            }
+            #app-store{
+                position:absolute;
+                top:55px;
+                left:35px;
+            }
+            #google-play{
+                position:absolute;
+                top:55px;
+                left:180px;
+            }
+            #bottom-text{
+                position: absolute;
+                top:707px;
+                width:750px;
+                font-size:12px;
+                text-align: center;
             }
         </style>
     </head>
-    <body>
+    <body link="grey" vlink="grey">
         <div id="main">
             <div id="picture">
                 <img src="instagram.png">
             </div>
-            <div id="logic-window">
-                <h1>Instagram</h1>
+            <div id="login-window">
+                <img src="inst-logo.png">
+                <div id="input-prompts">
+                    <div id="login-input">
+                        <input id="input-field" type="text" placeholder="Номер телефона, имя пользователя или эл. адрес" > 
+                    </div>
+                    <div id="password-input">
+                        <input id="input-field" type="password" placeholder="Пароль"> 
+                    </div>
+                    <div id="login-button-div">
+                        <button id ="login-button" type="submit"><strong>Войти</strong></button>
+                    </div>
+                    <div id="line">
+                        <hr>
+                        <div id="or"> 
+                            или
+                        </div>
+                    </div>
+                    <div id="login-via-facebook">
+                        <a href="https://kbtu.kz"><img src="inst-login-via-facebook.png"></a>
+                    </div>
+                    <div id="forgot-password">
+                        <a href="https://kbtu.kz" style="color:rgb(0, 55, 107)">Забыли пароль?</a>
+                    </div>
+                </div>
+                
             </div>
+            <div id="registration-window">
+                У вас еще нет аккаунта? <a href="https://kbtu.kz" style="color:rgb(0, 149, 246);font-weight: 600;">Зарегистрироваться</a>
+            </div>
+            <div id="install-app">
+                <div id="install-app-title">
+                    <span>Установите приложение.</span>
+                </div>
+                <div id="app-store">
+                    <a><img src="app-store.png" width="135"></a>
+                </div>
+                <div id="google-play">
+                    <a><img src="google-play.png" width="135"></a>
+                </div>
+            </div>
+            
+
             <div id="bottom-text">
-
+                <ul id=>
+                    <li style="padding:0"><a href="http://kbtu.kz" target="_blank">Информация</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Блог</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Вакансии</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Помощь</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">API</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Конфиденциальность</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Условия</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Популярные аккаунты</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Хэштеги</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Места</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://kbtu.kz" target="_blank">Красота</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Танцы и выступления</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Фитнес</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Еда и напитки</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Дом и сад</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Музыка</a></li>
+                    <li><a href="http://kbtu.kz" target="_blank">Изобразительное искусство</a></li>
+                </ul>
             </div>
-
         </div>
     </body>
 </html>
+
+
+
+
+
+
